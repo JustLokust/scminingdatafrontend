@@ -1,0 +1,16 @@
+<form class="mining-form-ore-container" (keydown.enter)="$event.preventDefault()">
+    <mat-form-field appearance="fill" class="mining-form-ore-type mining-form-ore-element">
+        <mat-label >Choose Ore Type</mat-label>
+        <mat-select [formControl]="myoretype" class="mining-form-ore-type-select">
+            <mat-option *ngFor="let ore of orejson" [ore]="ore" [value]="ore.oretype" >{{ore.oretype}}</mat-option>
+        </mat-select>
+    </mat-form-field>
+    <mat-form-field class="mining-form-ore-amount mining-form-ore-element" >
+        <mat-label>Ore Amount (SCU)</mat-label>
+        <input matInput [formControl]="myoreamount" maxlength="8" placeholder="Ex. 24.41">
+    </mat-form-field>
+    <div class="mining-form-ore-value mining-form-ore-element">{{getOreValue() | number: '1.0-2'}} aUEC</div>
+    <button mat-fab color="primary" aria-label="button with a delete icon that deletes the ore" class="mining-form-ore-delete-button" (click)="deleteOre()">
+        <mat-icon>delete</mat-icon>
+    </button>
+</form>
