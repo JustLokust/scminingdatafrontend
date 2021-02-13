@@ -1,1 +1,14 @@
-<p>mining-form-location works!</p>
+<form class="mining-form-location-container" (keydown.enter)="$event.preventDefault()">
+    <mat-form-field appearance="fill" class="mining-form-location-element">
+        <mat-label >Planet System</mat-label>
+        <mat-select [formControl]="planetSystem" class="mining-form-location-planetsystem-select">
+            <mat-option *ngFor="let planetsystem of locationjson" [value]="planetsystem.planetSystem" >{{planetsystem.planetSystem}}</mat-option>
+        </mat-select>
+    </mat-form-field>
+    <mat-form-field appearance="fill" class="mining-form-location-element">
+        <mat-label >Planet</mat-label>
+        <mat-select [formControl]="planet" class="mining-form-location-planet-select" [disabled]="getPlanetsOfSelectedSystem().length < 1">
+            <mat-option *ngFor="let planet of getPlanetsOfSelectedSystem()" [value]="planet" >{{planet}}</mat-option>
+        </mat-select>
+    </mat-form-field>
+</form>

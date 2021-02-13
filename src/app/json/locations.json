@@ -1,0 +1,45 @@
+[
+    {"planetSystem": "microTech", "planets": [
+        "Clio",
+        "Euterpe",
+        "Calliope",
+        "microTech",
+        "MIC L1"
+        ]
+    },
+    {"planetSystem": "ArcCorp", "planets": [
+        "ArcCorp",
+        "Lyria",
+        "Wala",
+        "ARC L1",
+        "ARC L2",
+        "ARC L3",
+        "ARC L4",
+        "ARC L5"
+        ]
+    },
+    {"planetSystem": "Crusader", "planets": [
+        "Crusader",
+        "Cellin",
+        "Daymar",
+        "Yela",
+        "CRU L1",
+        "CRU L3",
+        "CRU L4",
+        "CRU L5"
+        ]
+    },
+    {"planetSystem": "Hurston", "planets": [
+        "Hurston",
+        "Arial",
+        "Aberdeen",
+        "Ita",
+        "Magda",
+        "HUR L1",
+        "HUR L2",
+        "HUR L3",
+        "HUR L4",
+        "HUR L5"
+        ]
+    }
+]

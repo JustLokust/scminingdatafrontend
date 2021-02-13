@@ -1,8 +1,4 @@
-import { HttpClient } from '@angular/common/http';
-import { Component, Input, OnChanges, OnInit, SimpleChange, SimpleChanges } from '@angular/core';
-import { EMPTY, Observable } from 'rxjs';
-import { catchError } from 'rxjs/operators';
-import { Ore } from 'src/app/interfaces/ore';
+import { Component, Input, OnInit } from '@angular/core';
 import OreJson from '../../json/ores.json'
 import { FormControl } from '@angular/forms';
 import { OrelistService } from 'src/app/services/orelist.service';

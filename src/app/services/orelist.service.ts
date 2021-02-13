@@ -34,7 +34,6 @@ export class OrelistService {
     updatingOre.type = updatetype
     updatingOre.amount = updateamount
     this.updateTotalOreValue()
-    console.log(this.totalOreValue)
   }
   removeOre(removeid){
     let oreindex = this.ores.findIndex(e => e.id == removeid)
