@@ -1,5 +1,9 @@
 <div class="mining-form-container">
+    <app-mining-form-location></app-mining-form-location>
+    <br>
     List of Ores
+    <br>
+    <mat-divider class="mining-form-container-divider"></mat-divider>
     <br>
     <app-mining-form-ore *ngFor="let ore of orelistService.ores" [id]="ore.id"></app-mining-form-ore>
     <br>

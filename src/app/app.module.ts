@@ -14,6 +14,9 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatIconModule } from '@angular/material/icon';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MiningFormLocationComponent } from './components/mining-form-location/mining-form-location.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +24,8 @@ import { MatIconModule } from '@angular/material/icon';
     MiningFormComponent,
     MiningFormOreComponent,
     BackgroundComponent,
+    NavbarComponent,
+    MiningFormLocationComponent,
   ],
   imports: [
     BrowserModule,
@@ -32,7 +37,8 @@ import { MatIconModule } from '@angular/material/icon';
     ReactiveFormsModule,
     MatButtonModule,
     MatDividerModule,
-    MatIconModule
+    MatIconModule,
+    MatToolbarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
