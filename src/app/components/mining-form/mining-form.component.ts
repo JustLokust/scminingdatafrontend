@@ -13,16 +13,14 @@ export class MiningFormComponent implements OnInit {
   totalOreValue: Number = 0;
 
   constructor(public orelistService: OrelistService) {
-    this.getTotalOreValue()
   }
 
   ngOnInit(): void {
   }
+  ngAfterViewInit(){
+  }
   
   addOre(){
     this.orelistService.addOre()
-  }
-  getTotalOreValue(){
-    this.orelistService.totalOreValue.subscribe( x => this.totalOreValue = x)
   }
 }

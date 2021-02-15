@@ -1,0 +1,8 @@
+<form class="mining-form-ship-container" (keydown.enter)="$event.preventDefault()">
+    <mat-form-field appearance="fill" class="mining-form-ship-element">
+        <mat-label >Ship</mat-label>
+        <mat-select [formControl]="ship">
+            <mat-option *ngFor="let listship of shipsJSON" [value]="listship.ship" >{{listship.ship}}</mat-option>
+        </mat-select>
+    </mat-form-field>
+</form>

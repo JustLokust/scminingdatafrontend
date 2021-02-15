@@ -17,6 +17,8 @@ import { MatIconModule } from '@angular/material/icon';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MiningFormLocationComponent } from './components/mining-form-location/mining-form-location.component';
+import { MiningFormShipComponent } from './components/mining-form-ship/mining-form-ship.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +28,8 @@ import { MiningFormLocationComponent } from './components/mining-form-location/m
     BackgroundComponent,
     NavbarComponent,
     MiningFormLocationComponent,
+    MiningFormShipComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

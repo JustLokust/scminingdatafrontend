@@ -1,5 +1,6 @@
 <div class="mining-form-container">
     <app-mining-form-location></app-mining-form-location>
+    <app-mining-form-ship></app-mining-form-ship>
     <mat-divider class="mining-form-container-divider"></mat-divider>
     <br>
     <app-mining-form-ore *ngFor="let ore of orelistService.ores" [id]="ore.id"></app-mining-form-ore>
@@ -11,6 +12,6 @@
     <div class="mining-form-container-total">
         <div class="mining-form-container-total-element"></div>
         <div class="mining-form-container-total-element">Total Value:</div>
-        <div class="mining-form-container-total-element">{{totalOreValue | number: '1.0-2'}} aUEC</div>
+        <div class="mining-form-container-total-element">{{orelistService.totalOreValue.value | number: '1.0-2'}} aUEC</div>
     </div>
 </div>
